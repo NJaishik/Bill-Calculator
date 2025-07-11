@@ -1,0 +1,15 @@
+<template>
+  <div>
+    <lightning-input label="Enter Unit Price" placeholder="Unit Price" name="txtPrice" type="number" required="true" onchange={onHandler}> </lightning-input>
+    <lightning-input label="Enter Product Quanity" placeholder="Product Quantity" name="txtQuantity" type="number" required="true" onchange={onHandler}> </lightning-input>
+    <lightning-input label="Enter Discount(%)" placeholder="Discount(%)" type="number" required="true" onchange={onHandler}> </lightning-input>
+    <lightning-input label="Total Bill Amount" disabled="true" value={totalBillAmt}> </lightning-input>
+    <lightning-input label="Discount Amount" disabled="true" value={discountAmt}> </lightning-input>
+    <lightning-input label="Net Bill Amount" disabled="true" value={netBillAmt}> </lightning-input>
+    <br/>
+
+    <p align="center">
+      <lightning-button label="Calculate" onclick={billHandler}> </lightning-button>
+    </p>
+  </div>
+</template>
